@@ -1,0 +1,30 @@
+{
+  "name": "books-cron-report",
+  "version": "1.0.0",
+  "description": "Books API with Redis bulk insertion status tracking, PDF report generation, and email notifications",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "bulk-cron": "node bulkCron.js",
+    "report-cron": "node reportCron.js"
+  },
+  "keywords": ["books", "redis", "cron", "pdf", "email"],
+  "author": "aryansri9936",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^4.6.10",
+    "node-cron": "^3.0.2",
+    "pdfkit": "^0.13.0",
+    "nodemailer": "^6.9.5",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
